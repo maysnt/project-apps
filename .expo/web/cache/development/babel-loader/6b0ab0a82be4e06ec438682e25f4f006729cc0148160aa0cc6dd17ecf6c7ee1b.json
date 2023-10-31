@@ -1,0 +1,1 @@
+{"ast":null,"code":"import gracefulFs from 'graceful-fs';\nexport default gracefulFs;","map":{"version":3,"names":["gracefulFs"],"sources":["../../src/tools/gracefulifyFs.ts"],"sourcesContent":[null],"mappings":"AACA,OAAOA,UAAU,MAAM,aAAa;AAIpC,eAAeA,UAAU"},"metadata":{},"sourceType":"module","externalDependencies":[]}

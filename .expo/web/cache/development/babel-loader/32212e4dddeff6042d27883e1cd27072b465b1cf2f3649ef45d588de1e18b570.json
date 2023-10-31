@@ -1,0 +1,1 @@
+{"ast":null,"code":"","map":{"version":3,"names":[],"sources":["C:/Users/CR Laptop/Desktop/rn-project/react_navigation/node_modules/react-native-gesture-handler/lib/typescript/getShadowNodeFromRef.web.d.ts"],"sourcesContent":["export declare function getShadowNodeFromRef(_ref: any): null;\n"],"mappings":""},"metadata":{},"sourceType":"script","externalDependencies":[]}

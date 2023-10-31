@@ -1,0 +1,1 @@
+{"ast":null,"code":"#!/usr/bin/env node\nimport \"./tools/gracefulifyFs\";","map":{"version":3,"names":[],"sources":["../src/bin.ts"],"sourcesContent":[null],"mappings":";AAEA"},"metadata":{},"sourceType":"module","externalDependencies":[]}

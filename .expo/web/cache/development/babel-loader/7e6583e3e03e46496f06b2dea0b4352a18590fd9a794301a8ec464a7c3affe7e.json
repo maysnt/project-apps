@@ -1,0 +1,1 @@
+{"ast":null,"code":"export * from '@expo/config';","map":{"version":3,"names":[],"sources":["C:/Users/CR Laptop/Desktop/rn-project/react_navigation/node_modules/expo/config.d.ts"],"sourcesContent":["export * from '@expo/config';\n"],"mappings":"AAAA,cAAc,cAAc"},"metadata":{},"sourceType":"module","externalDependencies":[]}

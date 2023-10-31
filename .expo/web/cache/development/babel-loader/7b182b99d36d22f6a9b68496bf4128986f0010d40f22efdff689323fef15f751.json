@@ -1,0 +1,1 @@
+{"ast":null,"code":"export * from '@expo/metro-config';","map":{"version":3,"names":[],"sources":["C:/Users/CR Laptop/Desktop/rn-project/react_navigation/node_modules/expo/metro-config.d.ts"],"sourcesContent":["export * from '@expo/metro-config';\n"],"mappings":"AAAA,cAAc,oBAAoB"},"metadata":{},"sourceType":"module","externalDependencies":[]}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"","map":{"version":3,"names":[],"sources":["C:/Users/CR Laptop/Desktop/rn-project/react_navigation/node_modules/react-native-gesture-handler/lib/typescript/typeUtils.d.ts"],"sourcesContent":["export declare type ValueOf<T> = T[keyof T];\n"],"mappings":""},"metadata":{},"sourceType":"script","externalDependencies":[]}

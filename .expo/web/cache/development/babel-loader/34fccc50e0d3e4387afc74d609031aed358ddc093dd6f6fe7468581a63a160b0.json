@@ -1,0 +1,1 @@
+{"ast":null,"code":"export * from \"./GestureHandlerNative\";","map":{"version":3,"names":[],"sources":["C:/Users/CR Laptop/Desktop/rn-project/react_navigation/node_modules/@react-navigation/stack/src/views/GestureHandler.android.tsx"],"sourcesContent":["export * from './GestureHandlerNative';\n"],"mappings":"AAAA"},"metadata":{},"sourceType":"module","externalDependencies":[]}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { CLIError } from '@react-native-community/cli-tools';","map":{"version":3,"names":["CLIError"],"sources":["../src/errors.ts"],"sourcesContent":[null],"mappings":"AAAA,SAAQA,QAAQ,QAAO,mCAAmC"},"metadata":{},"sourceType":"module","externalDependencies":[]}

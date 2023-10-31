@@ -1,0 +1,1 @@
+{"ast":null,"code":"import loadConfig from '@react-native-community/cli-config';\nexport { loadConfig };","map":{"version":3,"names":["loadConfig"],"sources":["../src/index.ts"],"sourcesContent":[null],"mappings":"AAAA,OAAOA,UAAU,MAAM,oCAAoC;AAoM3D,SAAkBA,UAAU"},"metadata":{},"sourceType":"module","externalDependencies":[]}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"","map":{"version":3,"names":[],"sources":["C:/Users/CR Laptop/Desktop/rn-project/react_navigation/node_modules/expo-pwa/build/update.d.ts"],"sourcesContent":["export default function shouldUpdate(): Promise<void>;\n"],"mappings":""},"metadata":{},"sourceType":"module","externalDependencies":[]}

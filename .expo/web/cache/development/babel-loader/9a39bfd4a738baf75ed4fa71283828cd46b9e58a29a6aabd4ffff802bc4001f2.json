@@ -1,0 +1,1 @@
+{"ast":null,"code":"","map":{"version":3,"names":[],"sources":["C:/Users/CR Laptop/Desktop/rn-project/react_navigation/node_modules/@expo/config-plugins/build/utils/obj.d.ts"],"sourcesContent":["/** `lodash.get` */\nexport declare function get(obj: any, key: string): any;\n"],"mappings":""},"metadata":{},"sourceType":"script","externalDependencies":[]}

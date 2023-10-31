@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from \"./loadConfig\";","map":{"version":3,"names":["default"],"sources":["../src/index.ts"],"sourcesContent":[null],"mappings":"AAEA,SAAQA,OAAO"},"metadata":{},"sourceType":"module","externalDependencies":[]}
