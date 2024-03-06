@@ -2,16 +2,19 @@ import { Image, Text, TouchableOpacity, View, StyleSheet, TextInput, } from "rea
 import React, { useState } from "react";
 
 const LuasJG = ({ navigation }) => {
-    const [luasJG, ubahLuas] = useState(0)
+    const [luasJG, ubahLuasJG] = useState(0)
     const [alasJG, ubahAlas] = useState(0)
     const [tinggiJG, ubahTinggi] = useState(0)
     const hasilKali = () => {
-        ubahLuas(parseInt(alasJG) * parseInt(tinggiJG))
+        ubahLuasJG(parseInt(alasJG) * parseInt(tinggiJG))
     };
     return (
         <View style={styles.container}>
+            <View style={{left:10,}}>
             <Image source={require("./assets/Jajargenjang.png")} style={styles.image} />
             <Text style={styles.JGText}>Luas Jajar Genjang</Text>
+            <Text style={styles.JGText}>A x T</Text>
+            </View>
             <View style={styles.subCont}>
                 <Text style={styles.AlasText}>Alas:</Text>
                 <View>
@@ -27,7 +30,7 @@ const LuasJG = ({ navigation }) => {
                 >
                     <Text style={styles.Hasil}>Hasil</Text>
                 </TouchableOpacity>
-                <Text style={styles.HasilText}>Luas Jajar Genjangnya adalah = {luasJG}</Text>
+                <Text style={styles.HasilText}>Luas Jajar Genjangnya adalah = {luasJG} cm</Text>
             </View>
         </View>
     );
@@ -45,7 +48,7 @@ const styles = StyleSheet.create({
     JGText: {
         fontSize: 20,
         fontWeight: 'bold',
-        top: 100,
+        top: 50,
         left: 4,
         color: "#FFFFFF",
         textAlign: "center",
@@ -90,8 +93,8 @@ const styles = StyleSheet.create({
     },
     image: {
         width: 229,
-        height: 99,
-        top: 103,
+        height: 180,
+        top: 100,
     },
     HasilButton: {
         width: 83,

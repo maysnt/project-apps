@@ -2,16 +2,19 @@ import { Image, Text, TouchableOpacity, View, StyleSheet, TextInput, } from "rea
 import React, { useState } from "react";
 
 const KelilingPP = ({ navigation }) => {
-    const [kelilingpersegipanjang, setkelilingpersegipanjang] = useState(0)
-    const [panjangpersegipanjang, ubahPanjang] = useState(0)
-    const [lebarpersegipanjang, ubahLebar] = useState(0)
+    const [kelilingPersegiPanjang, ubahKelilingPersegiPanjang] = useState(0)
+    const [panjangPersegiPanjang, ubahPanjang] = useState(0)
+    const [lebarPersegiPanjang, ubahLebar] = useState(0)
     const hasil = () => {
-        setkelilingpersegipanjang(parseInt(2) * (parseInt(panjangpersegipanjang) + parseInt(lebarpersegipanjang)))
+        ubahKelilingPersegiPanjang(parseInt(2) * (parseInt(panjangPersegiPanjang) + parseInt(lebarPersegiPanjang)))
     };
     return (
         <View style={styles.container}>
+            <View style={{left: 10,}}>
             <Image source={require("./assets/PersegiPanjang.png")} style={styles.image} />
             <Text style={styles.PPText}>Keliling Persegi Panjang</Text>
+            <Text style={styles.RumusText}>2 x (P + L)</Text>
+            </View>
             <View style={styles.subCont}>
                 <Text style={styles.PanjangText}>Panjang:</Text>
                 <View>
@@ -27,7 +30,7 @@ const KelilingPP = ({ navigation }) => {
                 >
                     <Text style={styles.Hasil}>Hasil</Text>
                 </TouchableOpacity>
-                <Text style={styles.HasilText}>Keliling Persegi Panjangnya adalah = {kelilingpersegipanjang}</Text>
+                <Text style={styles.HasilText}>Keliling Persegi Panjangnya adalah = {kelilingPersegiPanjang} cm</Text>
             </View>
         </View>
     );
@@ -43,6 +46,14 @@ const styles = StyleSheet.create({
         marginTop: 85,
     },
     PPText: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        top: 100,
+        left: 1.5,
+        color: "#FFFFFF",
+        textAlign: "center",
+    },
+    RumusText: {
         fontSize: 20,
         fontWeight: 'bold',
         top: 100,
@@ -112,7 +123,7 @@ const styles = StyleSheet.create({
         textAlign: "center",
     },
     HasilText: {
-        fontSize: 20,
+        fontSize: 18,
         fontWeight: 'bold',
         top: 163,
         right: 5,

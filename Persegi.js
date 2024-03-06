@@ -5,10 +5,10 @@ const Persegi = ({ navigation }) => {
         <View style={styles.container}>
             <Image source={require("./assets/Persegi.png")} style={styles.image} />
             <Text style={styles.PersegiText}>Persegi</Text>
-            <View style={styles.LPButton}>
+            <View>
                 <TouchableOpacity
                     onPress={() => navigation.navigate("LuasPersegi")}
-                    style={styles.BRText}
+                    style={styles.LPButton}
                 >
                     <Text style={styles.LP}>Luas</Text>
                 </TouchableOpacity>

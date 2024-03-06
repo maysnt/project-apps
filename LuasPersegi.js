@@ -2,23 +2,26 @@ import { Image, Text, TouchableOpacity, View, StyleSheet, TextInput } from "reac
 import React, { useState } from "react";
 
 const LuasPersegi = ({ navigation }) => {
-    const [luasPersegi, setluaspersegi] = useState(0)
-    const [sisipersegi, setsisipersegi] = useState(0)
+    const [luasPersegi, ubahLuasPersegi] = useState(0)
+    const [sisiPersegi, ubahSisiPersegi] = useState(0)
     const hasilKali = () => {
-        setluaspersegi(parseInt(sisipersegi) * parseInt(sisipersegi))
+        ubahLuasPersegi(parseInt(sisiPersegi) * parseInt(sisiPersegi))
     };
     return (
         <View style={styles.container}>
+            <View style={styles.Atas}>
             <Image source={require("./assets/Persegi.png")} style={styles.image} />
             <Text style={styles.PersegiText}>Luas Persegi</Text>
+            <Text style={styles.RumusText}>S x S</Text>
+            </View>
             <View>
                 <Text style={styles.Sisi1Text}>Sisi 1:</Text>
                 <View>
-                    <TextInput onChangeText={setsisipersegi} placeholderTextColor='#CCD5CB' keyboardType="number-pad" placeholder="Masukkan sisi 1" style={styles.Sisi1}></TextInput>
+                    <TextInput onChangeText={ubahSisiPersegi} placeholderTextColor='#CCD5CB' keyboardType="number-pad" placeholder="Masukkan sisi 1" style={styles.Sisi1}></TextInput>
                 </View>
                 <Text style={styles.Sisi2Text}>Sisi 2:</Text>
                 <View>
-                    <TextInput onChangeText={setsisipersegi} placeholderTextColor='#CCD5CB' keyboardType="number-pad" placeholder="Masukkan sisi 2" style={styles.Sisi2}></TextInput>
+                    <TextInput onChangeText={ubahSisiPersegi} placeholderTextColor='#CCD5CB' keyboardType="number-pad" placeholder="Masukkan sisi 2" style={styles.Sisi2}></TextInput>
                 </View>
                 <TouchableOpacity
                     onPress={hasilKali}
@@ -26,7 +29,7 @@ const LuasPersegi = ({ navigation }) => {
                 >
                     <Text style={styles.Hasil}>Hasil</Text>
                 </TouchableOpacity>
-                <Text style={styles.HasilText}>Luas Perseginya adalah = {luasPersegi}</Text>
+                <Text style={styles.HasilText}>Luas Perseginya adalah = {luasPersegi} cm</Text>
             </View>
         </View>
     );
@@ -38,11 +41,22 @@ const styles = StyleSheet.create({
         backgroundColor: "#00101D",
         alignItems: "center",
     },
+    Atas:{
+        left: 10,
+    },
     PersegiText: {
         fontSize: 20,
         fontWeight: 'bold',
         top: 83,
         left: 4,
+        color: "#FFFFFF",
+        textAlign: "center",
+    },
+    RumusText: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        top: 83,
+        left: 3,
         color: "#FFFFFF",
         textAlign: "center",
     },

@@ -2,15 +2,19 @@ import { Image, Text, TouchableOpacity, View, StyleSheet, TextInput } from "reac
 import React, { useState } from "react";
 
 const KelilingPersegi = ({ navigation }) => {
-    const [kelilingPersegi, setkelilingpersegi] = useState(0)
-    const [sisipersegi, setSisiPersegi] = useState(0)
+    const [kelilingPersegi, ubahKelilingPersegi] = useState(0)
+    const [sisiPersegi, setSisiPersegi] = useState(0)
     const hasilKali = () => {
-        setkelilingpersegi(parseInt(sisipersegi) + parseInt(sisipersegi) + parseInt(sisipersegi) + parseInt(sisipersegi))
+        // ubahKelilingPersegi(parseInt(sisiPersegi) + parseInt(sisiPersegi) + parseInt(sisiPersegi) + parseInt(sisiPersegi))
+        ubahKelilingPersegi(parseInt(4) * (parseInt(sisiPersegi)))
     };
     return (
         <View style={styles.container}>
+            <View style={{left: 10,}}>
             <Image source={require("./assets/Persegi.png")} style={styles.image} />
             <Text style={styles.PersegiText}>Keliling Persegi</Text>
+            <Text style={styles.RumusText}>4 x S</Text>
+            </View>
             <View>
                 {/* <View>
                     {/* <TextInput onChangeText={setsisipersegi} placeholderTextColor='#CCD5CB' keyboardType="number-pad" placeholder="Masukkan sisi 1" style={styles.Sisi1}></TextInput>
@@ -25,7 +29,7 @@ const KelilingPersegi = ({ navigation }) => {
                 >
                     <Text style={styles.Hasil}>Hasil</Text>
                 </TouchableOpacity>
-                <Text style={styles.HasilText}>Keliling Perseginya adalah = {kelilingPersegi}</Text>
+                <Text style={styles.HasilText}>Keliling Perseginya adalah = {kelilingPersegi} cm</Text>
             </View>
         </View>
     );
@@ -38,6 +42,14 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     PersegiText: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        top: 83,
+        left: 4,
+        color: "#FFFFFF",
+        textAlign: "center",
+    },
+    RumusText: {
         fontSize: 20,
         fontWeight: 'bold',
         top: 83,

@@ -10,8 +10,11 @@ const LuasPP = ({ navigation }) => {
     };
     return (
         <View style={styles.container}>
+            <View style={{left: 10,}}>
             <Image source={require("./assets/PersegiPanjang.png")} style={styles.image} />
             <Text style={styles.PPText}>Luas Persegi Panjang</Text>
+            <Text style={styles.PPText}>P x L</Text>
+            </View>
             <View style={styles.subCont}>
                 <Text style={styles.PanjangText}>Panjang:</Text>
                 <View>
@@ -27,7 +30,7 @@ const LuasPP = ({ navigation }) => {
                 >
                     <Text style={styles.Hasil}>Hasil</Text>
                 </TouchableOpacity>
-                <Text style={styles.HasilText}>Luas Persegi Panjangnya adalah = {luas}</Text>
+                <Text style={styles.HasilText}>Luas Persegi Panjangnya adalah = {luas} cm</Text>
             </View>
         </View>
     );

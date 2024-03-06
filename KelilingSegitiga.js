@@ -2,17 +2,20 @@ import { Image, Text, TouchableOpacity, View, StyleSheet, TextInput, } from "rea
 import React, { useState } from "react";
 
 const KelilingSegitiga = ({ navigation }) => {
-    const [kelilingSegitiga, setKelilingSegitiga] = useState(0)
+    const [kelilingSegitiga, ubahKelilingSegitiga] = useState(0)
     const [sisi1, ubahSisi1] = useState(0)
     const [sisi2, ubahSisi2] = useState(0)
     const [sisi3, ubahSisi3] = useState(0)
     const hasil = () => {
-        setKelilingSegitiga(parseInt(sisi1) + parseInt(sisi2) + parseInt(sisi3))
+        ubahKelilingSegitiga(parseInt(sisi1) + parseInt(sisi2) + parseInt(sisi3))
     };
     return (
         <View style={styles.container}>
+            <View style={{left: 10,}}>
             <Image source={require("./assets/Segitiga.png")} style={styles.image} />
             <Text style={styles.SegitigaText}>Keliling Segitiga</Text>
+            <Text style={styles.SegitigaText}>S + S + S</Text>
+            </View>
             <View style={styles.subCont}>
                 <Text style={styles.Sisi1Text}>Sisi 1:</Text>
                 <View>
@@ -32,7 +35,7 @@ const KelilingSegitiga = ({ navigation }) => {
                 >
                     <Text style={styles.Hasil}>Hasil</Text>
                 </TouchableOpacity>
-                <Text style={styles.HasilText}>Keliling Segitiganya adalah = {kelilingSegitiga}</Text>
+                <Text style={styles.HasilText}>Keliling Segitiganya adalah = {kelilingSegitiga} cm</Text>
             </View>
         </View>
     );

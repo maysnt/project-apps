@@ -2,25 +2,27 @@ import { Image, Text, TouchableOpacity, View, StyleSheet, TextInput, } from "rea
 import React, { useState } from "react";
 
 const KelilingJG= ({ navigation }) => {
-    const [kelilingSegitiga, setKelilingSegitiga] = useState(0)
-    const [sisi1, ubahSisi1] = useState(0)
-    const [sisi2, ubahSisi2] = useState(0)
-    const [sisi3, ubahSisi3] = useState(0)
+    const [kelilingJG, ubahKelilingJG] = useState(0)
+    const [sisiA, ubahSisiA] = useState(0)
+    const [sisiB, ubahSisiB] = useState(0)
     const hasil = () => {
-        setKelilingSegitiga(parseInt(sisi1) + parseInt(sisi2) + parseInt(sisi3))
+        ubahKelilingJG(parseInt(2) * (parseInt(sisiA) + parseInt(sisiB)))
     };
     return (
         <View style={styles.container}>
-            <Image source={require("./assets/Jajargenjang.png")} style={styles.image} />
-            <Text style={styles.JGText}>Keliling Jajar Genjang</Text>
+            <View style={{left: 10,}}>
+                <Image source={require("./assets/Jajargenjang.png")} style={styles.image} />
+                <Text style={styles.JGText}>Keliling Jajar Genjang</Text>
+                <Text style={styles.JGText}>2 x (A + B)</Text>
+            </View>
             <View style={styles.subCont}>
-                <Text style={styles.Sisi1Text}>Sisi A:</Text>
+                <Text style={styles.SisiAText}>Sisi A:</Text>
                 <View>
-                    <TextInput onChangeText={ubahSisiA} placeholderTextColor='#CCD5CB' keyboardType="number-pad" placeholder="Masukkan Sisi Segitiga 1" style={styles.SisiA}></TextInput>
+                    <TextInput onChangeText={ubahSisiA} placeholderTextColor='#CCD5CB' keyboardType="number-pad" placeholder="Masukkan Sisi Jajar Genjang A" style={styles.SisiA}></TextInput>
                 </View>
-                <Text style={styles.Sisi2Text}>Sisi B:</Text>
+                <Text style={styles.SisiBText}>Sisi B:</Text>
                 <View>
-                    <TextInput onChangeText={ubahSisiB} placeholderTextColor='#CCD5CB' keyboardType="number-pad" placeholder="Masukkan Sisi Segitiga 2" style={styles.SisiB}></TextInput>
+                    <TextInput onChangeText={ubahSisiB} placeholderTextColor='#CCD5CB' keyboardType="number-pad" placeholder="Masukkan Sisi Jajar Genjang B" style={styles.SisiB}></TextInput>
                 </View>
                 <TouchableOpacity
                     onPress={hasil}
@@ -28,7 +30,7 @@ const KelilingJG= ({ navigation }) => {
                 >
                     <Text style={styles.Hasil}>Hasil</Text>
                 </TouchableOpacity>
-                <Text style={styles.HasilText}>Keliling Segitiganya adalah = {kelilingSegitiga}</Text>
+                <Text style={styles.HasilText}>Keliling Jajar Genjangnya adalah = {kelilingJG} cm</Text>
             </View>
         </View>
     );
@@ -42,11 +44,12 @@ const styles = StyleSheet.create({
     },
     subCont: {
         marginTop: 85,
+        left: 10,
     },
     JGText: {
         fontSize: 20,
         fontWeight: 'bold',
-        top: 83,
+        top: 50,
         left: 1.5,
         color: "#FFFFFF",
         textAlign: "center",
@@ -67,7 +70,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         top: 120,
-        left: 60,
+        left: 90,
         textAlign: 'center',
     },
     SisiBText: {
@@ -86,7 +89,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         top: 120,
-        left: 60,
+        left: 90,
         textAlign: 'center',
     },
     image: {
@@ -113,10 +116,10 @@ const styles = StyleSheet.create({
         textAlign: "center",
     },
     HasilText: {
-        fontSize: 20,
+        fontSize: 18,
         fontWeight: 'bold',
         top: 163,
-        right: 5,
+        right: 10,
         color: "#FFFFFF",
         textAlign: "center",
     },

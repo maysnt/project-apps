@@ -5,9 +5,10 @@ const JajarGenjang = ({ navigation }) => {
         <View style={styles.container}>
             <Image source={require("./assets/Jajargenjang.png")} style={styles.image} />
             <Text style={styles.JGText}>Jajar Genjang</Text>
-            <View style={styles.JGButton}>
+            <View>
                 <TouchableOpacity
                     onPress={() => navigation.navigate("LuasJG")}
+                    style={styles.JGButton}
                 >
                     <Text style={styles.LJG}>Luas</Text>
                 </TouchableOpacity>
@@ -31,7 +32,7 @@ const styles = StyleSheet.create({
     JGText: {
         fontSize: 20,
         fontWeight: 'bold',
-        top: 83,
+        top: 53,
         left: 4,
         color: "#FFFFFF",
         textAlign: "center",

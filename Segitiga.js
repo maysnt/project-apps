@@ -5,10 +5,10 @@ const Segitiga = ({ navigation }) => {
         <View style={styles.container}>
             <Image source={require("./assets/Segitiga.png")} style={styles.image} />
             <Text style={styles.SegitigaText}>Segitiga</Text>
-            <View style={styles.LSButton}>
+            <View>
                 <TouchableOpacity
                     onPress={() => navigation.navigate("LuasSegitiga")}
-                    style={styles.BRText}
+                    style={styles.LSButton}
                 >
                     <Text style={styles.LS}>Luas</Text>
                 </TouchableOpacity>

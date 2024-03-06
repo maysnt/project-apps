@@ -5,10 +5,10 @@ const PersegiPanjang = ({ navigation }) => {
         <View style={styles.container}>
             <Image source={require("./assets/PersegiPanjang.png")} style={styles.image} />
             <Text style={styles.PPText}>Persegi Panjang</Text>
-            <View style={styles.LPPButton}>
+            <View>
                 <TouchableOpacity
                     onPress={() => navigation.navigate("LuasPP")}
-                    style={styles.BRText}
+                    style={styles.LPPButton}
                 >
                     <Text style={styles.LPP}>Luas</Text>
                 </TouchableOpacity>

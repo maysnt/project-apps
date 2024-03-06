@@ -10,8 +10,11 @@ const LuasSegitiga = ({ navigation }) => {
     };
     return (
         <View style={styles.container}>
+            <View style={{left: 10,}}>
             <Image source={require("./assets/Segitiga.png")} style={styles.image} />
             <Text style={styles.SegitigaText}>Luas Segitiga</Text>
+            <Text style={styles.SegitigaText}>1/2 x A x T</Text>
+            </View>
             <View style={styles.subCont}>
                 <Text style={styles.AlasText}>Alas:</Text>
                 <View>
@@ -27,7 +30,7 @@ const LuasSegitiga = ({ navigation }) => {
                 >
                     <Text style={styles.Hasil}>Hasil</Text>
                 </TouchableOpacity>
-                <Text style={styles.HasilText}>Luas Segitiganya adalah = {luasSegitiga}</Text>
+                <Text style={styles.HasilText}>Luas Segitiganya adalah = {luasSegitiga} cm</Text>
             </View>
         </View>
     );
